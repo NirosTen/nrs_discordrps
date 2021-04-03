@@ -2,11 +2,6 @@
 -- @author NirosTen
 -- @version 1.0
 -- 
--- 
--- Thanks to greedisland for the help ;)
--- 
---
-
 
 Citizen.CreateThread(function()
     --This is the Application ID (Replace this with you own)
@@ -25,5 +20,5 @@ end)
 
 RegisterNetEvent("nrs_precense:Update")
 AddEventHandler("nrs_precense:Update", function(newPlayers)
-    SetRichPresence(GetPlayerName(PlayerId()) .. " - ".. newPlayers .. " joueur(s) en ligne")
+    SetRichPresence(GetPlayerName(PlayerId()) .. " - ".. newPlayers .. " online player(s) ")
 end)
