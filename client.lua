@@ -22,3 +22,4 @@ RegisterNetEvent("nrs_precense:Update")
 AddEventHandler("nrs_precense:Update", function(newPlayers)
     SetRichPresence(GetPlayerName(PlayerId()) .. " - ".. newPlayers .. " online player(s) ")
 end)
+

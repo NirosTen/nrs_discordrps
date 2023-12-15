@@ -1,7 +1,6 @@
 local numberPlayers = {}
 
-RegisterNetEvent("nrs_precense:add")
-AddEventHandler("nrs_precense:add", function()
+AddEventHandler("playerConnecting", function()
     local src = source
     numberPlayers[src] = true
 end)
